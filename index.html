@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide To Submit</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/slide-to-submit.css">
+</head>
+<body>
+<form method="POST" id="form1">
+	<label for="name">First Name</label>
+	<input type="text" name="name">
+	<label for="last">Last Name</label>
+	<input type="text" name="last">
+	<div class="slide-submit">
+		<div class="slide-submit-text">Slide To Submit</div>
+		<div class="slide-submit-thumb">»</div>
+	</div>
+</form>
+
+<a href="#" id="reload" class="button">Reload Demo</a><br><a href="http://www.github.com/kthornbloom/slide-to-submit" class="button">Docs</a>
+<script src="js/jquery.js"></script>
+<script src="js/slide-to-submit.js"></script>
+<script>
+	$('.slide-submit').slideToSubmit({
+		submitDelay: 1000,
+		successText: 'Looks Like You\x27re Human!'
+	});
+	
+	// Demo only
+	$("#form1").submit(function(e) {
+		e.preventDefault();
+		$('#form1').slideUp();
+	});
+	$('#reload').click(function() {
+		location.reload();
+	});
+</script>
+</body>
+</html>
