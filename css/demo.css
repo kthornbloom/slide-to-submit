@@ -37,6 +37,12 @@ input:focus {
 	box-shadow: 0 0 10px rgba(27, 165, 253, 0.4);
 }
 
+input:required:invalid {
+	box-shadow:inset -3px 0 0 red;
+}
+input:required:valid {
+	box-shadow:inset -3px 0 0 green;
+}
 .button {
 	display: inline-block;
 	width:300px;

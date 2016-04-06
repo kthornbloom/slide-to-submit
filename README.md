@@ -13,9 +13,10 @@ Slide To Submit requires jQuery. Add the plugin after jQuery, and initialize it.
 <script src="js/slide-to-submit.js"></script>
 <script>
 	$('.slide-submit').slideToSubmit({
-		submitDelay: 500, //Delays form submission so successText can be seen
-		successText: 'Sent!', //Text replacing "slide to send" upon success
-		graceZone: 100 //Amount of pixels near the left that is accepted as a full slide.
+		errorText: 'Check required fields', // Shown if fields are invalid
+		successText: 'Sent!', // Shown before submitting
+		submitDelay: 500, // Delay for showing successText
+		graceZone: 100 // Pixels from the right that is accepted as a full side
 	});
 </script>
 ```
@@ -38,4 +39,7 @@ Add the slide-submit element at the end of your form:
 ```
 
 ###Versions
+
+0.1.1 - Added support for HTML5 form validation
+
 0.1.0 - Launch
