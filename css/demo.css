@@ -26,21 +26,29 @@ input {
 	padding: 1em;
 	outline: none;
 	border: 1px solid #ccc;
+	transition:.25s;
 	box-sizing: border-box;
+}
+input:hover {
+	border:1px solid rgba(27, 165, 253, 0.6);;
+}
+input:focus {
+	border:1px solid #1BA5FD;
+	box-shadow: 0 0 10px rgba(27, 165, 253, 0.4);
 }
 
 .button {
 	display: inline-block;
 	width:300px;
 	border-radius:3px;
-	border:2px solid #ccc;
+	border:2px solid #B7B7B7;
 	box-sizing:border-box;
 	text-align:center;
 	text-decoration: none;
 	padding:1em 2em;
 	margin:.5em 0;
 	background:transparent;
-	color:#ccc;
+	color:#B7B7B7;
 	transition:.5s;
 }
 .button:hover {
