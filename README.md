@@ -1,7 +1,9 @@
 ## slide-to-submit
 A captcha alternative for preventing spam on forms, while maintaining an easy interface for humans.
 
-Simply slide it to the right to submit the form, similar to unlocking an iOS device.
+<a href="http://kthornbloom.com/slidetosubmit/">View Demo</a>
+
+Simply slide the element to the right to submit the form, similar to unlocking an iOS device. If a user mistakenly clicks instead, the sliding element will do a little animation to help suggest what to do.
 
 ###Usage
 Slide To Submit requires jQuery. Add the plugin after jQuery, and initialize it. You may also call options here.
