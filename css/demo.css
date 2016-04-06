@@ -55,3 +55,14 @@ input:focus {
 	border:2px solid #222;
 	color:#222;
 }
+
+@media (max-width:360px){
+	body {
+		padding:0;
+		margin:0;
+	}
+@media (max-width:300px){
+	form, .button {
+		width:100%;
+	}
+}
