@@ -1,6 +1,8 @@
 ## slide-to-submit
 A captcha alternative for preventing spam on forms, while maintaining an easy interface for humans.
 
+*NOTE* This is a demo for the slider compontent. By its self, it doesn't prevent spam because bots can submit forms on their own. This needs extended so that there's a check to see if the form was submitted using the dragged element, or by another method. There may be ADA issues at that point if that sort of thing is a concern for your project.
+
 <a href="http://kthornbloom.com/slidetosubmit/">View Demo</a>
 
 Simply slide the element to the right to submit the form, similar to unlocking an iOS device. (Slide via a mouse drag, or touch!) If a user mistakenly clicks instead, the sliding element will do a little animation to help suggest what to do.
